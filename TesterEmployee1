@@ -1,0 +1,24 @@
+package employee;
+
+public class TesterEmploye1
+{
+    public static void main(String[] args) 
+    {
+        Employee employee1 = new Employee();
+        Employee employee2 = new Employee("Mark Jones",39119);
+        Employee employee3 = new Employee("Joy Rogers",81774,"Manufacturing","Engginer");
+        
+        employee1.setName("Susan Mayers");
+        employee1.setIdNumber(47899);
+        employee1.setDepartement("Accounting");
+        employee1.setPosition("Vice President");
+        
+        employee2.setDepartement("IT");
+        employee2.setPosition("\tProgrammer");
+        
+        System.out.println("Name\t\tID Number\t\tDepartement\t\tPosition");
+        System.out.println(employee1.getName()+ "\t" + employee1.getIdNumber() + "\t\t\t" + employee1.getDepartement() + "\t\t" + employee1.getPosition());
+        System.out.println(employee2.getName()+ "\t" + employee2.getIdNumber() + "\t\t\t" + employee2.getDepartement() + "\t\t" + employee2.getPosition());
+        System.out.println(employee3.getName()+ "\t" + employee3.getIdNumber() + "\t\t\t" + employee3.getDepartement() + "\t\t" + employee3.getPosition());
+    }
+}
